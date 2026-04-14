@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { FilmesController } from './filmes.controller';
 import { Filmes } from './filmes';
 import { FilmesDto } from './filmes.dto/filmes.dto';
 
