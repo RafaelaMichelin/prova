@@ -1,1 +1,20 @@
-export class Estilos {}
+import { Model } from "sequelize";
+import { AutoIncrement, Column, DataType, ForeignKey, HasMany, PrimaryKey, Table } from "sequelize-typescript";
+@Table
+export class Estilos extends Model<Estilos> {
+
+    @PrimaryKey
+    @AutoIncrement
+    
+    @Column({
+       type: DataType.TINYINT
+    })
+     declare id:number;
+
+     @Column({
+        type: DataType.STRING
+     })
+     nome!:string;  
+
+
+}
